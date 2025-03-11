@@ -1,0 +1,20 @@
+2. Download YOLO Files*: Ensure you have the following files in your working directory:
+   - yolov3.weights
+   - yolov3.cfg
+   - coco.names
+
+     import urllib.request
+
+# Download YOLOv3 weights
+weights_url = "https://pjreddie.com/media/files/yolov3.weights"
+urllib.request.urlretrieve(weights_url, "yolov3.weights")
+
+# Download YOLOv3 config
+config_url = "https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg"
+urllib.request.urlretrieve(config_url, "yolov3.cfg")
+
+# Download COCO class labels
+labels_url = "https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names"
+urllib.request.urlretrieve(labels_url, "coco.names")
+
+this will download in your current directory
